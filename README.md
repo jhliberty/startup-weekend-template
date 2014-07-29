@@ -6,7 +6,7 @@ This is the blog for jhliberty.com/blog
 
 Todo:
 
-    ~~Initial Setup [testing, git, gitlab, gemfile]~~
+    <s>Initial Setup [testing, git, gitlab, gemfile]</s>
 
     Add portfolio as home page.
 
