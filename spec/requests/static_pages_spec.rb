@@ -26,6 +26,7 @@ describe "Static pages" do
 
     it "should have an active class on the about link" do
       visit about_path
+      expect(page).not_to have_css("li.active a", text: "Home")
       expect(page).to have_css("li.active a", text: "About")
     end
   end

@@ -1,12 +1,12 @@
 
 
-== Blog
+# Blog
 
-This is the blog for jhliberty.com/blog
+###This is the blog for jhliberty.com/blog
 
-Todo:
+##Todo:
 
-    ~~Initial Setup - testing, git, gitlab, gemfile~~
+    Initial Setup testing, git, gitlab, gemfile
 
     Add portfolio as home page.
 
