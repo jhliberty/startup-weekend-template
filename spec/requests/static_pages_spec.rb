@@ -6,7 +6,7 @@ describe "Static pages" do
 
   describe "Home page" do
 
-    it "should have the content 'John-Henry Liberty'" do
+    it "should have the base title 'John-Henry Liberty'" do
       visit '/static_pages/home'
       expect(page).to have_title("#{base_title}")
     end
@@ -14,9 +14,9 @@ describe "Static pages" do
 
   describe "About page" do
 
-  	it "should have the content 'About me' " do
+  	it "should have the title 'About me' " do
 	  	visit '/static_pages/about'
-	  	expect(page).to have_title("#{base_title} | About me")
+	  	expect(page).to have_title("About me | #{base_title}")
   	end
   end
 end
