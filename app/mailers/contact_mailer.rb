@@ -6,7 +6,6 @@ class ContactMailer < ActionMailer::Base
   	@from = @entry.email
   	@name = @entry.name
   	@message = @entry.message
-  	@phone = @entry.phone || ""
 
   	mail(from: "#{@name} <#{@from}>", subject: "Contact form submitted on %appname")
   end
