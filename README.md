@@ -1,34 +1,23 @@
 
 
-# Blog
-
-###This is the blog for jhliberty.com/blog
+# Startup Weekend Generators
 
 ##Todo:
 
-    Initial Setup testing, git, gitlab, gemfile
+    Abstract variables to a file
+     -contact mailer default to address
+     -app name
 
-    Add portfolio as home page.
+     Call the contactmailer.contact_email(params[:form]).deliver
 
-    Posts CRUD
+    Abstract base app into generator 
 
-    Blog home page
+    Next do a basic user system and put in generator
+    include views for: registration, login, lock screen and maybe a logout splash page
 
-    User system
+    Maybe add a jigsaw captcha or similar
 
-    Admin backend
+    Change default scaffold css to be bootstrapped
 
-    Categories
-
-    Tags
-
-    Popular posts
-
-    Comments (may use disqus or something to that effect else I should use akismet)
-
-    Privacy Policy/ToU
-
-    Affiliate books (Railstutorial and codeschool would be great options)
-
-    Analytics (Custom analytics.. when a page loads have it's controller create a new pageview object.. store what controller, what action, ip, location, etc into the db.)
+    Slim down default scaffolding
 
