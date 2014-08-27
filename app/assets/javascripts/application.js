@@ -12,5 +12,15 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+
+// Contact form tooltips
+	$(function() {
+	    $('.required-icon').tooltip({
+	        placement: 'left',
+	        title: 'Required field'
+	        });
+	});
