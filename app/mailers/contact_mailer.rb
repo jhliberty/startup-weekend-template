@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default to: "johnhenry.liberty@gmail.com"
+  default to: "your@email.here"
 
   def contact_email(entry)
   	@entry = entry
@@ -8,6 +8,6 @@ class ContactMailer < ActionMailer::Base
   	@message = @entry.message
   	@subject = @entry.subject
 
-  	mail(from: "#{@name} <#{@email}>", subject: "[#{@subject}] Contact form submitted on Startup Weekend")
+  	mail(from: "#{@name} <#{@email}>", subject: "[#{@subject}] ProjectName contact form submitted.")
   end
 end
