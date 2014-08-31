@@ -12,17 +12,13 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav pull-right">
+                <ul class="nav navbar-nav">
                     <li class="<%= 'active' if current_page?(root_path) %>"><a href="<%= root_path %>"><i class="fa fa-home"></i> Home</a>
                     </li>
                     <li class="<%= 'active' if current_page?(contact_us_path) %>"><a href="<%= contact_us_path %>"><i class="fa fa-envelope"></i> Contact</a>
                     </li>
                     <li class="<%= 'active' if current_page?(about_path) %>"><a href="<%= about_path %>"><i class="fa fa-user"></i> About</a>
-                    </li>
-                    <form class="navbar-form navbar-right">
-                      <input type="text" class="form-control col-lg-8" placeholder="Search...">
-                    </form>  
-                    
+                    </li>                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
