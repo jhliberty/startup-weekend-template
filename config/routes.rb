@@ -1,6 +1,7 @@
 Blogjhl::Application.routes.draw do
 
   resources :contacts
+  get '/contact', to: 'contacts#new', as: :contact_us
 
   get "/about", to: "static_pages#about", as: :about
   root to: "static_pages#home"
