@@ -1,3 +1,48 @@
 <% provide(:title, 'About') %>
  <h1>About</h1>
- <p>This is a static about page.</p>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus. </p>
+
+ <h2>The Team</h2>
+
+ <div class="container">
+    <div class="span3 well">
+        <center>
+        <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="http://jhliberty.com/assets/about.jpg" name="aboutme" width="140" height="140" class="img-circle"></a>
+        <h3>John-Henry Liberty</h3>
+        <em>click my face for more</em>
+		</center>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel">More About John-Henry Liberty</h4>
+                    </div>
+                <div class="modal-body">
+                    <center>
+                    <img src="http://jhliberty.com/assets/about.jpg" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                    <h3 class="media-heading">John-Henry Liberty <small>USA</small></h3>
+                    <span><strong>Skills: </strong></span>
+                        <span class="label label-warning">HTML5/CSS</span>
+                        <span class="label label-info">Ruby/Rails</span>
+                        <span class="label label-info">JavaScript</span>
+                        <span class="label label-success">Project Management</span>
+                    </center>
+                    <hr>
+                    <center>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about John-Henry</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
