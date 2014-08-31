@@ -8,6 +8,6 @@ class ContactMailer < ActionMailer::Base
   	@message = @entry.message
   	@subject = @entry.subject
 
-  	mail(from: "#{@name} <#{@email}>", subject: "Contact form submitted on Startup Weekend")
+  	mail(from: "#{@name} <#{@email}>", subject: "[#{@subject}] Contact form submitted on Startup Weekend")
   end
 end
