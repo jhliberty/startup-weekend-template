@@ -1,0 +1,50 @@
+
+              <%= form_for(@contact) do |f| %>
+                <% if @contact.errors.any? %>
+                  <div id="error_explanation">
+                    <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+                    <ul>
+                    <% @contact.errors.full_messages.each do |msg| %>
+                      <li><%= msg %></li>
+                    <% end %>
+                    </ul>
+                  </div>
+                <% end %>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <%= f.text_field :name, id:"name", placeholder:"Enter name", class:"form-control" %>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <%= f.email_field :email, id:"email", placeholder:"Enter email", class:"form-control" %>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Subject</label>
+                                <% @opts = [['Choose One:', 'na'],['General Customer Service', 'service'], ['Suggestions', 'suggestions'], ['Product Support', 'product']]   %>
+                                <%= f.select :subject, options_for_select(@opts), {},  {class:"form-control" }%>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                                <%= f.text_area :message, size:"25x9", class: "form-control", placeholder: "Message" %>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            Send Message</button>
+                    </div>
+                </div>
+              <% end %>
