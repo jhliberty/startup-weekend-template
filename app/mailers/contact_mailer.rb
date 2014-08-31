@@ -3,7 +3,7 @@ class ContactMailer < ActionMailer::Base
 
   def contact_email(entry)
   	@entry = entry
-  	@from = @entry.email
+  	@email = @entry.email
   	@name = @entry.name
   	@message = @entry.message
   	@subject = @entry.subject
