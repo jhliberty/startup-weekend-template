@@ -31,7 +31,7 @@ class ContactsController < ApplicationController
     respond_to do |format|
       if @contact.save
         ContactMailer.contact_email(@contact).deliver
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Thank you for sending us a message!' }
         format.json { render action: 'show', status: :created, location: @contact }
       else
         format.html { render action: 'new' }
