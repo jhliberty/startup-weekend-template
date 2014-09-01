@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-Blogjhl::Application.config.secret_key_base = secure_token
+StartupWeekend::Application.config.secret_key_base = secure_token

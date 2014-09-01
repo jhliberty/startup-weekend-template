@@ -1,4 +1,4 @@
-Blogjhl::Application.routes.draw do
+StartupWeekend::Application.routes.draw do
 
   resources :contacts
   get '/contact', to: 'contacts#new', as: :contact_us
